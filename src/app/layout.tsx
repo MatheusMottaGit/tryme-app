@@ -1,7 +1,11 @@
+import NavBar from '@/components/NavBar'
 import './globals.css'
+
 import { Russo_One as Russo } from 'next/font/google'
+import { Quicksand } from 'next/font/google'
 
 const russo = Russo({ subsets: ['latin'], weight: ['400'], variable: '--font-russo' })
+const quicksand = Quicksand({ subsets: ['latin'], weight: ['400'], variable: '--font-quicksand'})
 
 export const metadata = {
   title: 'Tryme',
@@ -15,7 +19,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${russo.variable} font-russo`}>
+      <body className={`${russo.variable} ${quicksand.variable} font-russo overflow-x-hidden bg-base`}>
+        <NavBar />
         {children}
       </body>
     </html>
