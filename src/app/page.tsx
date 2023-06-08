@@ -1,5 +1,7 @@
 import Presentation from "@/components/Home/Presentation";
-import TrandingProducts from "@/components/TrandingProducts";
+import OffersAndPromotions from "@/components/Offers/OffersAndPromotions";
+import TrandingProducts from "@/components/Tranding/TrandingProducts";
+
 
 export default function Home() {
   return (
@@ -7,6 +9,8 @@ export default function Home() {
       <Presentation />
 
       <TrandingProducts />
+
+      <OffersAndPromotions />
     </>
   )
 }
