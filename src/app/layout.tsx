@@ -21,7 +21,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${russo.variable} ${quicksand.variable} font-russo overflow-x-hidden bg-base`}>
         <NavBar />
-        {children}
+
+        <main className='w-screen flex flex-col justify-center items-center'>
+          {children}
+        </main>
       </body>
     </html>
   )
