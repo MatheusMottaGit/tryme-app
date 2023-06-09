@@ -2,9 +2,9 @@ import React from 'react'
 import Logo from './Logo'
 import Link from 'next/link'
 
-const NavBar = () => {
+const NavBarforRestOfApp = () => {
   return (
-    <nav className='w-full h-[10vh] flex items-center justify-between p-nav'>
+    <nav className='w-full h-[10vh] flex items-center justify-between p-nav bg-white'>
       <Logo />
 
       <ul className='font-quicksand font-bold text-xs flex items-center gap-8'>
@@ -32,4 +32,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default NavBarforRestOfApp
