@@ -4,6 +4,8 @@ import './globals.css'
 import { Russo_One as Russo } from 'next/font/google'
 import { Quicksand } from 'next/font/google'
 
+import Footer from '@/components/Footer'
+
 const russo = Russo({ subsets: ['latin'], weight: ['400'], variable: '--font-russo' })
 const quicksand = Quicksand({ subsets: ['latin'], weight: ['400'], variable: '--font-quicksand'})
 
@@ -24,6 +26,7 @@ export default function RootLayout({
 
         <main className='w-screen flex flex-col justify-center items-center'>
           {children}
+          {/* <Footer /> */}
         </main>
       </body>
     </html>
